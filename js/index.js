@@ -3,7 +3,7 @@ function OpenTestForm() {
 	document.getElementById('test-form').style.display = 'inline-block';
 	
 	document.getElementById('countdown').style.display = 'inline-block';
-	var TimeEnd = 5000;
+	var TimeEnd = 60000;
 	var TimeStart = 0;
 
 	var x = setInterval(function() {
