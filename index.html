@@ -13,15 +13,15 @@
 		<div class="title-form">
 			<h1>TRẮC NGHIỆM ONLINE</h1>
 			<button id="button-open-form" onclick="OpenTestForm();" >BẮT ĐẦU LÀM BÀI THI</button><br/>
-			<div id="countdown">Còn lại: <span id="clock" style="color: red;">15 phút 00 giây'</span></div>
+			<div id="countdown">Còn lại: <span id="clock" style="color: red;">15 phút 00 giây</span></div>
 			<div id="test-form">
 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRq0VjKO1VcirmKgtbCbhRmqF6Muhi-oLz4brAF4pVakcgIw/viewform?embedded=true" width="650px" height="420px" frameborder="20" marginheight="0" marginwidth="0">Đang tải...</iframe>
 			</div>
 		</div>	
-		<div class="cancel-tab">
-			<h2>!!! THÔNG BÁO !!!</h2>
+		<div id="cancel-tab">
+			<h2>!!! THÔNG BÁO !!!</h2><br/>
 			<p style="font-size: 20px;">Đã hết giờ làm bài, bài làm chưa được gửi sẽ bị hủy!</p>
-			<br/><button style="background: black; color: blue; outline: none; border: 1px solid white; padding: 15px; cursor: pointer;" onclick="window.open('https://onl-test.github.io/');">XÁC NHẬN</button>
+			<br/><button id="btn-cancel-form" onclick="window.open('index.html');">XÁC NHẬN</button>
 		</div>
 	</div>
 </body>

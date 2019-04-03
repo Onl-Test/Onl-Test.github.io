@@ -16,8 +16,7 @@ function OpenTestForm() {
 
 		if (distance < 0) {
 		    clearInterval(x);
-		    alert("Bài làm của bạn đã bị hủy!");
-		    document.getElementById('countdown').style.display = 'none';
+		    document.getElementById('cancel-tab').style.display = 'inline-block';
 		  }
 	}, 1000);
 }
