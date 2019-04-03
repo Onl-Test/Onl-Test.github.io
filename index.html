@@ -14,10 +14,12 @@
 			<h1>HỆ THỐNG KIỂM TRA ONLINE</h1>
 			<button id="button-open-form" onclick="OpenTestForm()" >BẮT ĐẦU LÀM BÀI THI</button>
 		</div>
+			
 		<div id="countdown">CÒN LẠI: <span id="clock"></span></div>
 		<div id="test-form">
 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRq0VjKO1VcirmKgtbCbhRmqF6Muhi-oLz4brAF4pVakcgIw/viewform?embedded=true" width="640" height="1312" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
 		</div>
+		<button id="exit-form" onclick="document.getElementById('test-form').style.display = 'none'; document.getElementById('exit-form').style.display = 'none';" style="color: red;" >ĐÓNG FORM</button>
 	</div>
 </body>
 </html>

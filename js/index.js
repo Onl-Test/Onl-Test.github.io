@@ -1,4 +1,9 @@
-var TimeEnd = 900000;
+function OpenTestForm() {
+	document.getElementById('test-form').style.display = 'inline-block';
+	document.getElementById('exit-form').style.display = 'inline-block';
+	
+	document.getElementById('countdown').style.display = 'inline-block';
+	var TimeEnd = 900000;
 var TimeStart = 0;
 
 var x = setInterval(function() {
@@ -14,8 +19,4 @@ var x = setInterval(function() {
 	    document.getElementById("countdown").innerHTML = "HẾT GIỜ";
 	  }
 }, 1000);
-
-function OpenTestForm() {
-	document.getElementById('test-form').style.display = 'inline-block';
-	document.getElementById('countdown').style.display = 'inline-block';
 }

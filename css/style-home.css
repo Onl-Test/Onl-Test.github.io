@@ -39,6 +39,25 @@
 	animation: OpenTab 1s 1;
 }
 
+#exit-form {
+	display: none;
+	position: fixed;
+	top: 50px;
+	left: 20px;
+	width: 100px;
+	height: 35px;
+	background: yellow;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+#exit-form:hover {
+	color: white;
+	background: black;
+}
+
 #countdown {
 	display: none;
 	position: fixed;
