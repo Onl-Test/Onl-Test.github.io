@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style-home.css" />
 	<script src="js/index.js" type="text/javascript"></script>
 </head>
-<body>
+<body style="background: #CCC !important;">
 	<div class="main">
 		<div class="title-form">
 			<marquee><h1>TRẮC NGHIỆM ONLINE</h1></marquee>
@@ -21,6 +21,13 @@
 			<!-- ===================== -->
 
 			</div>
+		</div>
+		<div id="reminder-tab">
+			<h2 style="padding: 10px 0px;">!!! NHẮC NHỞ !!!</h2>
+			<hr/><br/>
+			<p>Thời gian làm bài sắp hết, hãy nhanh chóng hoàn thành bài thi!</p>
+			<br/>
+			<button id="bnt-cancel-reminder" style="height: 30px; padding-top: 7px;" onclick="document.getElementById('reminder-tab').style.display = 'none';">OK</button>
 		</div>	
 		<div id="cancel-tab">
 			<h2>!!! THÔNG BÁO !!!</h2><br/>

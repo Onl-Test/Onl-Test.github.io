@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+
 .title-form {
 	position: absolute;
 	top: 80px;
@@ -62,7 +63,7 @@
 	padding-top: 250px;
 }
 
-#btn-cancel-form {
+#bnt-cancel-reminder, #btn-cancel-form {
 	background: black;
 	color: blue;
 	outline: none;
@@ -70,7 +71,7 @@
 	padding: 15px;
 	cursor: pointer;
 }
-#btn-cancel-form:hover {
+#bnt-cancel-reminder:hover, #btn-cancel-form:hover {
 	background: white;
 	font-weight: bold;
 }
@@ -80,9 +81,10 @@ iframe {
   	height: 500px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #test-form {
   	top: 395px;
+  	width: 320px;
   }
   iframe {
   	width: 300px;
@@ -91,6 +93,21 @@ iframe {
   #countdown {
   	font-size: 20px;
   }
+}
+
+#reminder-tab {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: black;
+	color: white;
+	padding: 10px 0px;
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	border-radius: 10px;
 }
 
 @keyframes OpenTab {
