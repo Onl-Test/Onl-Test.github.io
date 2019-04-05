@@ -1,12 +1,13 @@
-function OpenTestForm() {
+﻿function OpenTestForm() {
 	document.getElementById('button-open-form').style.display = 'none';
-	document.getElementById('test-form').style.display = 'inline-block';
+	document.getElementById('instruction').style.display = 'none';
+	document.getElementById('banner').style.display = 'none';
+	document.getElementById('test-form').style.display = 'block';
 	
 	document.getElementById('countdown').style.display = 'inline-block';
 	
 	/* !!! SET UP TIMER HERE !!! */
-	var TimeEnd = 60000;
-	
+	var TimeEnd = 1500000;
 	var TimeStart = 0;
 
 	var x = setInterval(function() {
@@ -17,7 +18,7 @@ function OpenTestForm() {
 
 	  	document.getElementById("clock").innerHTML = minutes + " phút " + seconds + " giây";
 
-	  	if (distance < 30000 && distance > 28000) {
+	  	if (distance < 60000 && distance > 58000) {
 	  		document.getElementById('reminder-tab').style.display = 'inline-block';
 	  	}
 

@@ -1,24 +1,34 @@
-* {
+﻿* {
 	margin: 0;
 	padding: 0;
 }
 
-
-.title-form {
-	position: absolute;
-	top: 80px;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.header {
 	text-align: center;
 }
 
+.white-text {
+	color: white;
+	font-size: 10px;
+}
+
+#instruction {
+	width: 420px;
+	display: block;
+	border: 2px solid white;
+	margin: 0 auto;
+	text-align: left;
+	padding: 20px;
+}
+
 #button-open-form {
+	display: block;
 	width: 300px;
 	height: 50px;
-	margin-top: 15px;
 	font-size: 18px;
 	background: white;
 	color: blue;
+	margin: 10px auto; 
 	border: 1px solid blue;
 	outline: none;
 	border-radius: 10px;
@@ -50,6 +60,11 @@
 	line-height: 35px;
 	border-radius: 5px;
 	font-size: 25px;
+	position:absolute;
+	top: 14%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 #cancel-tab {
@@ -83,15 +98,21 @@ iframe {
 
 @media only screen and (max-width: 650px) {
   #test-form {
-  	top: 395px;
+  	top: 300px;
   	width: 320px;
   }
   iframe {
-  	width: 300px;
+  	width: 320px;
   	height: 380px;
   }
   #countdown {
   	font-size: 17px;
+  }
+  #banner > img {
+  	width: 320px;
+  }
+  h1 {
+  	font-size: 25px;
   }
 }
 
@@ -108,19 +129,6 @@ iframe {
 	height: 150px;
 	text-align: center;
 	border-radius: 10px;
-}
-
-.footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 60px;
-	background: lightblue;
-	color: black;
-	font-weight: bold;
-	padding-top: 30px;
-	text-align: center;
 }
 
 @keyframes OpenTab {

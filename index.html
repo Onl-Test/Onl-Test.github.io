@@ -1,40 +1,52 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>ONLINE TEST SYSTEM</title>
+	<title>CUỘC THI "TÌM HIỂU VỀ BÁC"</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="#" rel="shortcut icon" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style-home.css" />
 	<script src="js/index.js" type="text/javascript"></script>
 </head>
 <body style="background: #CCC !important;">
 	<div class="main">
+		<div style="text-align: center;" id="banner"><img src="img/banner.jpg" style="max-width: 640px;" /></div>
 		<div class="title-form">
-			<marquee><h1 style="padding-top: 20px;">TRẮC NGHIỆM ONLINE</h1></marquee>
-			<button id="button-open-form" onclick="OpenTestForm();" >BẮT ĐẦU LÀM BÀI THI</button><br/>
-			<div id="countdown">Còn lại: <span id="clock" style="color: red;">1 phút 00 giây</span></div>
+			<div class="header">
+				<h1 style="padding-top: 20px;">CUỘC THI "TÌM HIỂU VỀ BÁC"</h1><br/>
+				<h3 id="instruction" style="color: blue; word-spacing: 3px;"><div style="text-align: center;"><i class="fas fa-question-circle"></i> THỂ LỆ THI VÒNG LOẠI <i class="fas fa-question-circle"></i></div><br/>
+                <i class="fas fa-fast-forward white-text"></i> Số câu hỏi: 30 câu<br/>
+                <i class="fas fa-fast-forward white-text"></i> Thời gian: 25 phút<br/>
+                <i class="fas fa-fast-forward white-text"></i> Số lần làm bài: 1 lần/ 1 thí sinh<br/>
+                <i class="fas fa-fast-forward white-text"></i> Cách thức: 10 thí sinh có điểm thi vòng loại cao nhất sẽ được vào vòng trong.<br/>
+                <i class="fas fa-fast-forward white-text"></i> <ins>Lưu ý:</ins> Nếu hết thời gian mà thí sinh chưa nộp bài thì sẽ bị huỷ kết quả thi.</h3>
+			</div>
+
+			<div id="countdown">Còn lại: <span id="clock" style="color: red;">25 phút 00 giây</span></div>
+			
+			<div><button id="button-open-form" onclick="OpenTestForm();" >BẮT ĐẦU LÀM BÀI THI</button></div><br/>
+			
 			<div id="test-form">
 			
 			<!-- PASTE EMBED LINK HERE -->
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRq0VjKO1VcirmKgtbCbhRmqF6Muhi-oLz4brAF4pVakcgIw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeo74z1ymLqHaIHLlQeVz-JBUH_nIsTkeoicSlDYYD5OgplEw/viewform?embedded=true" width="" height="" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
 			<!-- ===================== -->
 
 			</div>
 		</div>
 		<div id="reminder-tab">
-			<h2 style="padding: 10px 0px;">!!! NHẮC NHỞ !!!</h2>
+			<h2 style="padding: 10px 0px;">NHẮC NHỞ</h2>
 			<hr/><br/>
-			<p>Thời gian làm bài sắp hết, hãy nhanh chóng hoàn thành bài thi!</p>
+			<p>Thời gian làm bài sắp hết!</p>
 			<br/>
 			<button id="bnt-cancel-reminder" style="height: 30px; padding-top: 7px;" onclick="document.getElementById('reminder-tab').style.display = 'none';">OK</button>
 		</div>	
 		<div id="cancel-tab">
-			<h2>!!! THÔNG BÁO !!!</h2><br/>
-			<p style="font-size: 20px;">Đã hết giờ làm bài, bài làm chưa được gửi sẽ bị hủy!</p>
-			<br/><button id="btn-cancel-form" onclick="window.open('index.html');">XÁC NHẬN</button>
+			<h2>THÔNG BÁO</h2><br/>
+			<p style="font-size: 20px;">Đã hết giờ làm bài, kết quả bài làm của bạn đã bị huỷ!</p>
+			<br/><button id="btn-cancel-form" onclick="window.close('index.html');">XÁC NHẬN</button>
 		</div>
-		<div class="footer">BẢN QUYỀN THUỘC VỀ JASON NGUYEN<br/>ALL RIGHTS RESERVED</div>
 	</div>
 </body>
 </html>
