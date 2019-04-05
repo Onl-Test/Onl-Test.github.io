@@ -43,7 +43,7 @@
 
 #test-form {
 	display: none;
-	position: fixed;
+	position: absolute;
 	top: 380px;
 	left: 50%;
 	transform: translate(-50%, -50%);

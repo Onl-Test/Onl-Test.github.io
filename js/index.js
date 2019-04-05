@@ -7,7 +7,7 @@
 	document.getElementById('countdown').style.display = 'inline-block';
 	
 	/* !!! SET UP TIMER HERE !!! */
-	var TimeEnd = 1500000;
+	var TimeEnd = 1620000;
 	var TimeStart = 0;
 
 	var x = setInterval(function() {
