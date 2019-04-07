@@ -4,49 +4,44 @@
 	<meta charset="utf-8" />
 	<title>CUỘC THI "TÌM HIỂU VỀ BÁC"</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="#" rel="shortcut icon" />
+	<link href="img/icon.png" rel="shortcut icon" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style-home.css" />
 	<script src="js/index.js" type="text/javascript"></script>
 </head>
 <body style="background: #CCC !important;">
 	<div class="main">
-		<div style="text-align: center;" id="banner"><img src="img/banner.jpg" style="max-width: 640px;" /></div>
-		<div class="title-form">
-			<div class="header">
-				<h1 style="padding-top: 20px;">CUỘC THI "TÌM HIỂU VỀ BÁC"</h1><br/>
-				<h3 id="instruction" style="color: blue; word-spacing: 3px;"><div style="text-align: center;"><i class="fas fa-question-circle"></i> THỂ LỆ THI VÒNG LOẠI <i class="fas fa-question-circle"></i></div><br/>
-                <i class="fas fa-fast-forward white-text"></i> Số câu hỏi: 30 câu<br/>
-                <i class="fas fa-fast-forward white-text"></i> Thời gian: 25 phút<br/>
-                <i class="fas fa-fast-forward white-text"></i> Thang điểm: 30.<br/>
-                <i class="fas fa-fast-forward white-text"></i> Số lần làm bài: 1 lần/ thí sinh<br/>
-                <i class="fas fa-fast-forward white-text"></i> <ins>Lưu ý:</ins> Nếu hết thời gian mà thí sinh chưa nộp bài thì sẽ bị huỷ kết quả thi.</h3>
-			</div>
-
-			<div id="countdown">Còn lại: <span id="clock" style="color: red;">27 phút 00 giây</span></div>
-			
-			<div><button id="button-open-form" onclick="OpenTestForm();" >BẮT ĐẦU LÀM BÀI THI</button></div><br/>
-			
-			<div id="test-form">
-			
-			<!-- PASTE EMBED LINK HERE -->
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeo74z1ymLqHaIHLlQeVz-JBUH_nIsTkeoicSlDYYD5OgplEw/viewform?embedded=true" width="" height="" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
-			<!-- ===================== -->
-
-			</div>
+		<div style="text-align: center;" id="banner"><img src="img/banner.jpg" width="100%" /></div>
+		<h1 style="text-align: center; padding: 10px 0px;" id="event-name">CUỘC THI "TÌM HIỂU VỀ BÁC"</h1>
+		<div id="instruction">
+			<div style="text-align: center; padding-bottom: 10px;"><i class="fas fa-question-circle"></i> THỂ LỆ THI VÒNG LOẠI <i class="fas fa-question-circle"></i></div>
+            Với số câu hỏi là 30, các thí sinh sẽ có thời gian làm bài là 25 phút. Thang điểm sẽ được tính 1đ/ câu đúng và mỗi thí sinh chỉ được làm bài một lần duy nhất. LƯU Ý <span class="emphrase-text">nếu hết thời gian mà thí sinh chưa nộp bài thì sẽ bị huỷ kết quả thi</span>. Chúc các bạn thí sinh làm bài thật tốt!
 		</div>
+		
+		<div id="countdown">Bộ đếm thời gian: <span id="clock" style="color: red;">27 phút 00 giây</span></div>
+		
+		<button id="button-open-form" class="btn" onclick="OpenTestForm();" >BẮT ĐẦU LÀM BÀI THI</button>
+		
+		<div id="test-form">
+			<!-- PASTE EMBED LINK HERE --> 
+			<iframe id="_form" src="https://docs.google.com/forms/d/e/1FAIpQLSeo74z1ymLqHaIHLlQeVz-JBUH_nIsTkeoicSlDYYD5OgplEw/viewform?embedded=true" frameborder="0" marginheight="" marginwidth="">Đang tải...</iframe>
+			<!-- ===================== -->
+		</div>
+
 		<div id="reminder-tab">
 			<h2 style="padding: 10px 0px;">NHẮC NHỞ</h2>
 			<hr/><br/>
 			<p>Thời gian làm bài sắp hết!</p>
 			<br/>
-			<button id="bnt-cancel-reminder" style="height: 30px; padding-top: 7px;" onclick="document.getElementById('reminder-tab').style.display = 'none';">OK</button>
-		</div>	
+			<button class="btn" id="bnt-cancel-reminder" onclick="document.getElementById('reminder-tab').style.display = 'none';">TÔI BIẾT RỒI</button>
+		</div>
+
 		<div id="cancel-tab">
 			<h2>THÔNG BÁO</h2><br/>
 			<p style="font-size: 20px;">Đã hết giờ làm bài, kết quả bài làm của bạn đã bị huỷ!</p>
-			<br/><button id="btn-cancel-form" onclick="window.close('index.html');">XÁC NHẬN</button>
+			<br/><button class="btn" id="btn-cancel-form" onclick="window.close('index.html');">XÁC NHẬN</button>
 		</div>
 	</div>
+	<h1 id="check-width">VUI LÒNG SỬ DỤNG THIẾT BỊ LỚN HƠN!</h1>
 </body>
 </html>

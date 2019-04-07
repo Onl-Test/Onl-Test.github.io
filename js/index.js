@@ -1,10 +1,7 @@
 ﻿function OpenTestForm() {
 	document.getElementById('button-open-form').style.display = 'none';
-	document.getElementById('instruction').style.display = 'none';
-	document.getElementById('banner').style.display = 'none';
 	document.getElementById('test-form').style.display = 'block';
-	
-	document.getElementById('countdown').style.display = 'inline-block';
+	document.getElementById('countdown').style.display = 'block';
 	
 	/* !!! SET UP TIMER HERE !!! */
 	var TimeEnd = 1620000;
@@ -25,8 +22,8 @@
 		if (distance < 0) {
 		    clearInterval(x);
 		    document.getElementById('cancel-tab').style.display = 'inline-block';
-		    document.getElementById('countdown').style.display = 'none';
 		    document.getElementById('test-form').style.display = 'none';
+		    document.getElementById('countdown').style.display = 'none';
 		  }
 	}, 1000);
 }
